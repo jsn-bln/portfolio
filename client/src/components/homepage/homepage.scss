@@ -1,0 +1,54 @@
+.homepage-container{
+    font-family: 'Hammersmith One', sans-serif;
+    color: #f3f3f3;
+    line-height: 50%;
+    text-align: center;
+    font-size: 2rem;
+    .brand-name{
+        color: #FF9F1C;
+    }
+    .brand-sub-text{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .database-svg{
+        width: 200px;
+        height: 200px;
+        background: url('./database.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        position: absolute;
+        top: 55%;
+        left: 70%;
+    }
+    .programming-svg{
+        width: 200px;
+        height: 200px;
+        background: url('./coding.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        position: absolute;
+        top: 55%;
+        left: 20%;
+    }
+    .brand-header{
+        margin-top: 45%;
+    }
+}
+
+
+@media(max-width: 500px){
+    .homepage-container{
+        line-height: 110%;
+        width: 90%;
+        margin: o auto;
+        padding-left: 20px;
+        .programming-svg, .database-svg{
+            width: 80px;
+            height: 80px;
+            top: 65%;
+
+        }
+    }
+}

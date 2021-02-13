@@ -1,0 +1,64 @@
+.about-container{
+    color: #011627;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Hammersmith One', sans-serif;
+    .photo-container{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        .photo{
+            width: 50%;
+            height: 70%;
+            background: url('./me-min.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10px;
+            margin: 0 auto;
+        }
+    }
+    .text-container{
+        width: 45%;
+        padding: 5%;
+        .text-header{
+            font-size: 2rem;
+        };
+        .text{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+        }
+        .icons{
+            display: flex;
+            justify-content: space-around;
+        }
+        .svg-coder{
+            width: 100px;
+            height: 100px;
+            background:url('./programing.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .svg-chess{
+            width: 100px;
+            height: 100px;
+            background:url('./strategy.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .about-container{
+        flex-direction: column;
+        height: 100vh;
+        .photo-container{
+            display: none;
+        }
+        .text-container{
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.about-container {
+  color: #011627;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.about-container .photo-container {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-container .photo-container .photo {
+  width: 50%;
+  height: 70%;
+  background: url("./me-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.about-container .text-container {
+  width: 45%;
+  padding: 5%;
+}
+
+.about-container .text-container .text-header {
+  font-size: 2rem;
+}
+
+.about-container .text-container .text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+.about-container .text-container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-container .text-container .svg-coder {
+  width: 100px;
+  height: 100px;
+  background: url("./programing.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-container .text-container .svg-chess {
+  width: 100px;
+  height: 100px;
+  background: url("./strategy.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+  .about-container .photo-container {
+    display: none;
+  }
+  .about-container .text-container {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=about.css.map */

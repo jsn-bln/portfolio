@@ -1,0 +1,77 @@
+.projects-container{
+    font-family: 'Hammersmith One', sans-serif;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    .project-header{
+        padding-top: 5%;
+        font-size: 2rem;
+    }
+    .projects{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        a{
+            text-decoration: none;
+            color: #f3f3f3;
+        }
+        .project-todo{
+            width: 30%;
+            height: 50%;
+            background: url('./todo.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-weather{
+            background: url('./weather.png');
+            background-size: cover;
+            background-repeat: no-repeat;;
+            width: 30%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-chat{
+            background: url('./chat.png');
+            background-size: cover;
+            background-repeat: no-repeat;;
+            width: 30%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-item-header{
+            background: #000;
+            padding: 5px;
+            
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .projects-container{
+        height: 100%;
+        .project-header{
+            padding-top: 20%;
+            font-size: 2rem;
+        }
+        .projects{
+           display: inline-flex;
+            .project-chat, .project-todo, .project-weather{
+                width: 90%;
+                background-position: 50% 50%;
+                height: 25%;
+                
+            }
+        }
+    }
+}

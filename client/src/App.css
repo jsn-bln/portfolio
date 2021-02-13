@@ -1,0 +1,74 @@
+.App {
+  overflow-y: hidden;
+}
+
+.App .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .homepage {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .about {
+  background: #f3f3f3;
+  height: 100vh;
+  width: 100%;
+}
+
+.App .skills {
+  height: 100vh;
+  width: 100%;
+}
+
+.App .projects {
+  height: 100vh;
+  width: 100%;
+}
+
+.App .contact {
+  height: 100vh;
+  width: 100%;
+}
+
+.App .footer {
+  height: 15vh;
+  width: 100%;
+  background: #1a1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .footer .author {
+  color: #f3f3f3;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App .footer .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .footer .btn-group svg {
+  margin: 5px;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,117 @@
+.projects-container {
+  font-family: 'Hammersmith One', sans-serif;
+  color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.projects-container .project-header {
+  padding-top: 5%;
+  font-size: 2rem;
+}
+
+.projects-container .projects {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects-container .projects a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.projects-container .projects .project-todo {
+  width: 30%;
+  height: 50%;
+  background: url("./todo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-container .projects .project-weather {
+  background: url("./weather.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-container .projects .project-chat {
+  background: url("./chat.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-container .projects .project-item-header {
+  background: #000;
+  padding: 5px;
+}
+
+@media (max-width: 500px) {
+  .projects-container {
+    height: 100%;
+  }
+  .projects-container .project-header {
+    padding-top: 20%;
+    font-size: 2rem;
+  }
+  .projects-container .projects {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .projects-container .projects .project-chat, .projects-container .projects .project-todo, .projects-container .projects .project-weather {
+    width: 90%;
+    background-position: 50% 50%;
+    height: 25%;
+  }
+}
+/*# sourceMappingURL=projects.css.map */
