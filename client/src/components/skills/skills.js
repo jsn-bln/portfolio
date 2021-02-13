@@ -17,22 +17,22 @@ const Skills = () => {
         <div className='skills-container'>
             <div data-aos="slide-right" className='stats'>
                 <div className='stat-border'>
-                <h1 className='stats-header'>My Stats</h1>
+                <h1 className='stats-header'>My Traits</h1>
                 <div className='stats-item'>
                     <div className='stats-sub-item'>
                         <ul>
                             Pros
                             <li>
-                                can work under pressure
+                                Can work under pressure
                             </li>
                             <li>
-                                can work under pressure
+                                Passionate about programming
                             </li>
                             <li>
-                                can work under pressure
+                                Continuous Learner
                             </li>
                             <li>
-                                can work under pressure
+                                I am versatile
                             </li>
                         </ul>
                     </div>
@@ -40,16 +40,10 @@ const Skills = () => {
                     <ul>
                          Cons
                             <li>
-                                can work under pressure
+                                Shy at the start
                             </li>
                             <li>
-                                can work under pressure
-                            </li>
-                            <li>
-                                can work under pressure
-                            </li>
-                            <li>
-                                can work under pressure
+                                Too critical to myself
                             </li>
                         </ul>
                     </div>
