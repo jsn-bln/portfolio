@@ -68,8 +68,9 @@
 @media (max-width: 500px) {
   .nav-container {
     width: 80%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=nav.css.map */

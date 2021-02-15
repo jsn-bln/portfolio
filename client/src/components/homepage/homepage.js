@@ -3,13 +3,11 @@ import {Spring, config} from 'react-spring/renderprops'
 
 
 const Homepage = () => {
-   
-
     return(
         <div className='homepage-container'>
             <Spring from={{marginTop: -500}}
                     to={{marginTop: 250}}
-                    config={{duration: 1000, delay: 500}}>
+                    config={{duration: 500}}>
             {props => 
                 <h1 style={props} className='brand-header'>Hello, my name is 
                     <Spring from={{color:'#f3f3f3'}}
