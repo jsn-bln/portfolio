@@ -113,6 +113,14 @@
   background: #FF9F1C;
   border: none;
   padding: 10px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.contact-container .contact-form form .input-group .contact-btn:hover {
+  border-radius: 10px;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 500px) {

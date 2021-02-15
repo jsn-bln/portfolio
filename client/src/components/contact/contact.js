@@ -10,6 +10,7 @@ const Contact = () => {
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
     const [body, setBody] = useState('')
+    const [sent, setSent] = useState(false)
 
 
     useEffect(() => {
@@ -25,13 +26,13 @@ const Contact = () => {
             subject,
             body
         }
-        axios.post('http://localhost:5000/sendemail',payload,{
+        axios.post('/sendemail',payload,{
             headers: {
                 'Content-Type': 'application/json;charset=UTF-8',
                 "Access-Control-Allow-Origin": "*",
               }
         })
-            .then(res => console.log(res))
+            .then(res => setSent(true))
             .catch(err => console.log(err))
     }
     
@@ -48,6 +49,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit}>
                     <h1>Contact me</h1>
                     <div className='input-group'>
+                        {sent? `Message Sent`: ''}
                         <input onChange={e => setEmail(e.target.value)} className='contact-input' type='email' placeholder='Email'/>
                         <input onChange={e => setSubject(e.target.value)} className='contact-input' type='text' placeholder='Subject'/>
                         <textarea onChange={e => setBody(e.target.value)} className='contact-message' placeholder='message'/>

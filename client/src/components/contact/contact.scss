@@ -59,12 +59,19 @@
                     border: none;
                     padding: 10px;
                     margin: 5px;
+                    
                 }
                 .contact-btn{
                     color: #f3f3f3;
                     background: #FF9F1C;
                     border: none;
                     padding: 10px;
+                    transition: all 200ms ease-in-out;
+                    cursor: pointer;
+                }
+                .contact-btn:hover{
+                    border-radius: 10px;
+                    font-size: 1.3rem;
                 }
             }
             

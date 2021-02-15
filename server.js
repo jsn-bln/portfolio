@@ -6,10 +6,10 @@ require('dotenv').config()
 
 const PORT = process.env.PORT || 5000
 
-app.use(cors({origin: true, credentials: true}));
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cors());
+
 
 app.post('/sendemail',(req, res) => {
     const transporter = nodemailer.createTransport({
